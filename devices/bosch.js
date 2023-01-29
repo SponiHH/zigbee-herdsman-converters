@@ -571,6 +571,15 @@ const definition = [
         },
         exposes: [e.switch(), e.power_on_behavior(), e.power(), e.energy()],
     },
+    {
+        zigbeeModel: ['RBSH-SD-ZB'],
+        model: 'BSD-2',
+        vendor: 'Bosch',
+        description: 'Bosch Smart Home Smoke Alarm',
+        fromZigbee: [fz.ias_smoke_alarm_1],
+        toZigbee: [],
+        exposes: [e.smoke(), e.battery_low(), e.test(), e.tamper(), e.trouble()],
+    },
 ];
 
 module.exports = definition;

@@ -578,7 +578,7 @@ const definition = [
         description: 'Bosch Smart Home Smoke Alarm',
         fromZigbee: [fz.ias_smoke_alarm_1],
         toZigbee: [],
-        exposes: [e.smoke(), e.battery_low(), e.test(), e.tamper(), e.trouble()],
+        exposes: [e.smoke(), e.battery_low(), e.test(), e.tamper()],
     },
 ];
 
